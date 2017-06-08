@@ -39,6 +39,7 @@
     NSLog(@"  %@ ",transformer);
     SSJSONModel *model = [[SSJSONModel alloc]init];
     AMDBaseViewModel *viewmodel = [[AMDBaseViewModel alloc]init];
+    SSJSONKeyMapper *mapper = [[SSJSONKeyMapper alloc]init];
 }
 
 
