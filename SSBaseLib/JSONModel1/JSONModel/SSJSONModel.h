@@ -132,7 +132,7 @@ DEPRECATED_ATTRIBUTE
 
 // deprecated
 + (NSMutableArray *)arrayOfModelsFromDictionaries:(NSArray *)array DEPRECATED_MSG_ATTRIBUTE("use arrayOfModelsFromDictionaries:error:");
-+ (void)setGlobalKeyMapper:(JSONKeyMapper *)globalKeyMapper DEPRECATED_MSG_ATTRIBUTE("override +keyMapper in a base model class instead");
++ (void)setGlobalKeyMapper:(SSJSONKeyMapper *)globalKeyMapper DEPRECATED_MSG_ATTRIBUTE("override +keyMapper in a base model class instead");
 + (NSString *)protocolForArrayProperty:(NSString *)propertyName DEPRECATED_MSG_ATTRIBUTE("use classForCollectionProperty:");
 - (void)mergeFromDictionary:(NSDictionary *)dict useKeyMapping:(BOOL)useKeyMapping DEPRECATED_MSG_ATTRIBUTE("use mergeFromDictionary:useKeyMapping:error:");
 - (NSString *)indexPropertyName DEPRECATED_ATTRIBUTE;
@@ -242,7 +242,7 @@ DEPRECATED_ATTRIBUTE
  * Overwrite in your models if your property names don't match your JSON key names.
  * Lookup JSONKeyMapper docs for more details.
  */
-+ (JSONKeyMapper *)keyMapper;
++ (SSJSONKeyMapper *)keyMapper;
 
 /**
  * Indicates whether the property with the given name is Optional.

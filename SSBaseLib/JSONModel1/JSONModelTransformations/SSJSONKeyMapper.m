@@ -46,11 +46,11 @@
 
     if (self) {
 
-        __weak JSONKeyMapper* weakSelf = self;
+        __weak SSJSONKeyMapper* weakSelf = self;
 
         _modelToJSONKeyBlock = [^NSString* (NSString* keyName) {
 
-            __strong JSONKeyMapper *strongSelf = weakSelf;
+            __strong SSJSONKeyMapper *strongSelf = weakSelf;
 
             //try to return cached transformed key
             if (strongSelf.toJSONMap[keyName]) {
@@ -165,7 +165,7 @@
 
 }
 
-+ (instancetype)mapper:(JSONKeyMapper *)baseKeyMapper withExceptions:(NSDictionary *)exceptions
++ (instancetype)mapper:(SSJSONKeyMapper *)baseKeyMapper withExceptions:(NSDictionary *)exceptions
 {
     NSArray *keys = exceptions.allKeys;
     NSArray *values = [exceptions objectsForKeys:keys notFoundMarker:[NSNull null]];

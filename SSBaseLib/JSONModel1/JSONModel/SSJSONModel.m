@@ -35,11 +35,11 @@ static const char * kIndexPropertyNameKey;
 #pragma mark - class static variables
 static NSArray* allowedJSONTypes = nil;
 static NSArray* allowedPrimitiveTypes = nil;
-static JSONValueTransformer* valueTransformer = nil;
+static SSJSONValueTransformer* valueTransformer = nil;
 static Class SSJSONModelClass = NULL;
 
 #pragma mark - model cache
-static JSONKeyMapper* globalKeyMapper = nil;
+static SSJSONKeyMapper* globalKeyMapper = nil;
 
 #pragma mark - SSJSONModel implementation
 @implementation SSJSONModel
@@ -69,7 +69,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
                 @"Block"
             ];
 
-            valueTransformer = [[JSONValueTransformer alloc] init];
+            valueTransformer = [[SSJSONValueTransformer alloc] init];
 
             // This is quite strange, but I found the test isSubclassOfClass: (line ~291) to fail if using [SSJSONModel class].
             // somewhat related: https://stackoverflow.com/questions/6524165/nsclassfromstring-vs-classnamednsstring
@@ -200,13 +200,13 @@ static JSONKeyMapper* globalKeyMapper = nil;
     return self;
 }
 
--(JSONKeyMapper*)__keyMapper
+-(SSJSONKeyMapper*)__keyMapper
 {
     //get the model key mapper
     return objc_getAssociatedObject(self.class, &kMapperObjectKey);
 }
 
--(BOOL)__doesDictionary:(NSDictionary*)dict matchModelWithKeyMapper:(JSONKeyMapper*)keyMapper error:(NSError**)err
+-(BOOL)__doesDictionary:(NSDictionary*)dict matchModelWithKeyMapper:(SSJSONKeyMapper*)keyMapper error:(NSError**)err
 {
     //check if all required properties are present
     NSArray* incomingKeysArray = [dict allKeys];
@@ -262,7 +262,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
     return YES;
 }
 
--(NSString*)__mapString:(NSString*)string withKeyMapper:(JSONKeyMapper*)keyMapper
+-(NSString*)__mapString:(NSString*)string withKeyMapper:(SSJSONKeyMapper*)keyMapper
 {
     if (keyMapper) {
         //custom mapper
@@ -279,7 +279,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
     return string;
 }
 
--(BOOL)__importDictionary:(NSDictionary*)dict withKeyMapper:(JSONKeyMapper*)keyMapper validation:(BOOL)validation error:(NSError**)err
+-(BOOL)__importDictionary:(NSDictionary*)dict withKeyMapper:(SSJSONKeyMapper*)keyMapper validation:(BOOL)validation error:(NSError**)err
 {
     NSArray *allkeys = [dict allKeys];
     //loop over the incoming keys and set self's properties
@@ -448,7 +448,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
 
                     // searched around the web how to do this better
                     // but did not find any solution, maybe that's the best idea? (hardly)
-                    Class sourceClass = [JSONValueTransformer classByResolvingClusterClasses:[jsonValue class]];
+                    Class sourceClass = [SSJSONValueTransformer classByResolvingClusterClasses:[jsonValue class]];
 
                     //JMLog(@"to type: [%@] from type: [%@] transformer: [%@]", p.type, sourceClass, selectorName);
 
@@ -848,7 +848,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
     if (!property.customSetters)
         property.customSetters = [NSMutableDictionary new];
 
-    NSString *className = NSStringFromClass([JSONValueTransformer classByResolvingClusterClasses:[value class]]);
+    NSString *className = NSStringFromClass([SSJSONValueTransformer classByResolvingClusterClasses:[value class]]);
 
     // 做防御处理
     if ([property.customSetters[className] isKindOfClass:[NSString class]]) {
@@ -1066,7 +1066,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
                     //in this case most probably a custom property was defined in a model
                     //but no default reverse transformer for it
                     @throw [NSException exceptionWithName:@"Value transformer not found"
-                                                   reason:[NSString stringWithFormat:@"[JSONValueTransformer %@] not found", selectorName]
+                                                   reason:[NSString stringWithFormat:@"[SSJSONValueTransformer %@] not found", selectorName]
                                                  userInfo:nil];
                     return nil;
                 }
@@ -1348,12 +1348,12 @@ static JSONKeyMapper* globalKeyMapper = nil;
 }
 
 #pragma mark - key mapping
-+(JSONKeyMapper*)keyMapper
++(SSJSONKeyMapper*)keyMapper
 {
     return nil;
 }
 
-+(void)setGlobalKeyMapper:(JSONKeyMapper*)globalKeyMapperParam
++(void)setGlobalKeyMapper:(SSJSONKeyMapper*)globalKeyMapperParam
 {
     globalKeyMapper = globalKeyMapperParam;
 }

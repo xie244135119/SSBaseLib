@@ -48,7 +48,7 @@ typedef NSString *(^SSJSONModelKeyMapBlock)(NSString *keyName);
  * }
  * </pre>
  */
-@interface JSONKeyMapper : NSObject
+@interface SSJSONKeyMapper : NSObject
 
 // deprecated
 @property (readonly, nonatomic) SSJSONModelKeyMapBlock JSONToModelKeyBlock DEPRECATED_ATTRIBUTE;
@@ -97,6 +97,6 @@ typedef NSString *(^SSJSONModelKeyMapBlock)(NSString *keyName);
  * Creates a JSONKeyMapper based on a built-in JSONKeyMapper, with specific exceptions.
  * Use the original JSON key names as keys, and your SSJSONModel property names as values.
  */
-+ (instancetype)mapper:(JSONKeyMapper *)baseKeyMapper withExceptions:(NSDictionary *)exceptions;
++ (instancetype)mapper:(SSJSONKeyMapper *)baseKeyMapper withExceptions:(NSDictionary *)exceptions;
 
 @end
