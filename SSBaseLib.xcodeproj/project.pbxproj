@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AC442598F29C12FC3D94CA4 /* libPods-SSBaseLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE14241C087B16F0D215AEB /* libPods-SSBaseLib.a */; };
+		933C2574F6F75DA9695CB00A /* Pods_SSBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAEE51A66C32B546A45C32F /* Pods_SSBaseLib.framework */; };
 		CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A721EE91B1000471DE9 /* SSBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7E1EE91BBC00471DE9 /* AMDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A7A1EE91BBC00471DE9 /* AMDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */; };
@@ -17,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.release.xcconfig"; sourceTree = "<group>"; };
-		4BE14241C087B16F0D215AEB /* libPods-SSBaseLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSBaseLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DC683115BDE19013D9529C /* Pods-SSBaseLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.debug.xcconfig"; sourceTree = "<group>"; };
 		CB614A6F1EE91B1000471DE9 /* SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB614A721EE91B1000471DE9 /* SSBaseLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseLib.h; sourceTree = "<group>"; };
@@ -26,6 +25,7 @@
 		CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDBaseModel.m; sourceTree = "<group>"; };
 		CB614A7C1EE91BBC00471DE9 /* AMDBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDBaseViewModel.h; sourceTree = "<group>"; };
 		CB614A7D1EE91BBC00471DE9 /* AMDBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDBaseViewModel.m; sourceTree = "<group>"; };
+		FBAEE51A66C32B546A45C32F /* Pods_SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC442598F29C12FC3D94CA4 /* libPods-SSBaseLib.a in Frameworks */,
+				933C2574F6F75DA9695CB00A /* Pods_SSBaseLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		CE76D6BF9E5D59949EBBDB24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BE14241C087B16F0D215AEB /* libPods-SSBaseLib.a */,
+				FBAEE51A66C32B546A45C32F /* Pods_SSBaseLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
