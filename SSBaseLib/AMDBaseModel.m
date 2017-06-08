@@ -7,6 +7,7 @@
 //
 
 #import "AMDBaseModel.h"
+#import "SSJSONModel.h"
 
 @implementation AMDBaseModel
 

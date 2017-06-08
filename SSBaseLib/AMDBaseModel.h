@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONModel.h"
-//#import <JSONModel/JSONModel.h>
+#import "SSJSONModel.h"
 
-@interface AMDBaseModel : JSONModel
+@interface AMDBaseModel : SSJSONModel
+//@interface AMDBaseModel : NSObject
 
 
 @property(nonatomic,strong) NSMutableDictionary *baseOtherinfo;      //调错

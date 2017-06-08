@@ -19,5 +19,5 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 
 #import <SSBaseLib/AMDBaseModel.h>
 #import <SSBaseLib/AMDBaseViewModel.h>
-
+#import <SSBaseLib/SSJSONModelLib.h>
 
