@@ -17,3 +17,7 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SSBaseLib/PublicHeader.h>
 
 
+#import <SSBaseLib/AMDBaseModel.h>
+#import <SSBaseLib/AMDBaseViewModel.h>
+
+
