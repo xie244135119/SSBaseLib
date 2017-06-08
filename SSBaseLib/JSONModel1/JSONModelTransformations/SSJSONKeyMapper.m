@@ -17,12 +17,12 @@
 #import "SSJSONKeyMapper.h"
 #import <libkern/OSAtomic.h>
 
-@interface JSONKeyMapper()
+@interface SSJSONKeyMapper()
 @property (nonatomic, strong) NSMutableDictionary *toJSONMap;
 @property (nonatomic, assign) OSSpinLock lock;
 @end
 
-@implementation JSONKeyMapper
+@implementation SSJSONKeyMapper
 
 -(instancetype)init
 {

@@ -25,7 +25,7 @@ extern BOOL isNull(id value)
     return NO;
 }
 
-@implementation JSONValueTransformer
+@implementation SSJSONValueTransformer
 
 -(id)init
 {

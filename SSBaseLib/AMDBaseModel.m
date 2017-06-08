@@ -8,6 +8,7 @@
 
 #import "AMDBaseModel.h"
 #import "SSJSONModel.h"
+#import "SSJSONModelLib.h"
 
 @implementation AMDBaseModel
 

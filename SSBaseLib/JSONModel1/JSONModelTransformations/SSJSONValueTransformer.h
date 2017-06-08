@@ -41,7 +41,7 @@ extern BOOL isNull(id value);
  * JSON types into your target class property classes, and vice versa.
  * One static copy is create and store in the SSJSONModel class scope.
  */
-@interface JSONValueTransformer : NSObject
+@interface SSJSONValueTransformer : NSObject
 
 @property (strong, nonatomic, readonly) NSDictionary *primitivesNames;
 

@@ -21,8 +21,8 @@
 #import "SSJSONModelError.h"
 
 // transformations
-#import "JSONValueTransformer.h"
-#import "JSONKeyMapper.h"
+#import "SSJSONValueTransformer.h"
+#import "SSJSONKeyMapper.h"
 
 //// networking (deprecated)
 //#import "JSONHTTPClient.h"
