@@ -29,6 +29,7 @@
 		CB614AD41EE95F2D00471DE9 /* SSJSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AC91EE95F2D00471DE9 /* SSJSONKeyMapper.m */; };
 		CB614AD51EE95F2D00471DE9 /* SSJSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614ACA1EE95F2D00471DE9 /* SSJSONValueTransformer.h */; };
 		CB614AD61EE95F2D00471DE9 /* SSJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614ACB1EE95F2D00471DE9 /* SSJSONValueTransformer.m */; };
+		CB614AD81EE9618400471DE9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB614AD71EE9618400471DE9 /* README.md */; };
 		E960947965215F65B4E13944 /* libPods-SSBaseLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA897E7C08215C3C5C52ECAB /* libPods-SSBaseLib.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		CB614AC91EE95F2D00471DE9 /* SSJSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONKeyMapper.m; sourceTree = "<group>"; };
 		CB614ACA1EE95F2D00471DE9 /* SSJSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSONValueTransformer.h; sourceTree = "<group>"; };
 		CB614ACB1EE95F2D00471DE9 /* SSJSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONValueTransformer.m; sourceTree = "<group>"; };
+		CB614AD71EE9618400471DE9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				CB614A7C1EE91BBC00471DE9 /* AMDBaseViewModel.h */,
 				CB614A7D1EE91BBC00471DE9 /* AMDBaseViewModel.m */,
 				CB614A721EE91B1000471DE9 /* SSBaseLib.h */,
+				CB614AD71EE9618400471DE9 /* README.md */,
 				CB614A731EE91B1000471DE9 /* Info.plist */,
 			);
 			path = SSBaseLib;
@@ -359,6 +362,7 @@
 				CB614A811EE91BBC00471DE9 /* AMDBaseViewModel.m in Sources */,
 				CB614AD61EE95F2D00471DE9 /* SSJSONValueTransformer.m in Sources */,
 				CB614AD11EE95F2D00471DE9 /* SSJSONModelError.m in Sources */,
+				CB614AD81EE9618400471DE9 /* README.md in Sources */,
 				CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
