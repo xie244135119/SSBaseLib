@@ -215,7 +215,7 @@ DEPRECATED_ATTRIBUTE
  * @param array list of SSJSONModel objects
  * @return a list of NSDictionary objects
  * @exception SSJSONModelTypeNotAllowedException thrown when unsupported type is found in the incoming JSON,
- * or a property type in your model is not supported by JSONValueTransformer and its categories
+ * or a property type in your model is not supported by SSJSONValueTransformer and its categories
  * @see arrayOfModelsFromDictionaries:
  */
 + (NSMutableArray *)arrayOfDictionariesFromModels:(NSArray *)array;

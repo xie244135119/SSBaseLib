@@ -1,5 +1,5 @@
 //
-//  JSONValueTransformer.h
+//  SSJSONValueTransformer.h
 //
 //  @version 1.2
 //  @author Marin Todorov (http://www.underplot.com) and contributors
@@ -27,7 +27,7 @@ extern BOOL isNull(id value);
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-#pragma mark - JSONValueTransformer interface
+#pragma mark - SSJSONValueTransformer interface
 /**
  * **You don't need to call methods of this class manually.**
  *

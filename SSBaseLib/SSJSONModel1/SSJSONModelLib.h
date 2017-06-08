@@ -17,12 +17,13 @@
 #import <Foundation/Foundation.h>
 
 // core
-#import "SSJSONModel.h"
-#import "SSJSONModelError.h"
+#import <SSBaseLib/SSJSONModel.h>
+#import <SSBaseLib/SSJSONModelError.h>
 
 // transformations
-#import "SSJSONValueTransformer.h"
-#import "SSJSONKeyMapper.h"
+#import <SSBaseLib/SSJSONValueTransformer.h>
+#import <SSBaseLib/SSJSONKeyMapper.h>
+
 
 //// networking (deprecated)
 //#import "JSONHTTPClient.h"

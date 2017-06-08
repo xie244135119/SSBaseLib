@@ -1,5 +1,5 @@
 //
-//  JSONValueTransformer.m
+//  SSJSONValueTransformer.m
 //
 //  @version 1.2
 //  @author Marin Todorov (http://www.underplot.com) and contributors

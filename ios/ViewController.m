@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 //#import <SSBaseLib.h>
-#import "AMDBaseModel.h"
+#import "AMDBaseViewModel.h"
+#import "SSJSONModel.h"
+#import "SSJSONValueTransformer.h"
 
 @interface ViewController ()
 
@@ -33,6 +35,10 @@
 //    AMDBaseModel *model = [[AMDBaseModel alloc]initWithDictionary:@{@"a":@"asd"} error:nil];
 //    AMDBaseModel *model = [[AMDBaseModel alloc]init];
 //    NSLog(@"%@",model);
+    SSJSONValueTransformer *transformer = [[SSJSONValueTransformer alloc]init];
+    NSLog(@"  %@ ",transformer);
+    SSJSONModel *model = [[SSJSONModel alloc]init];
+    AMDBaseViewModel *viewmodel = [[AMDBaseViewModel alloc]init];
 }
 
 
