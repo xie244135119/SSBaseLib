@@ -16,7 +16,7 @@
 }
 
 // 响应控制器
-//@property(nonatomic, weak) uiviewcon *senderController;
+@property(nonatomic, weak) UIViewController *senderController;
 // 需要承载显示的父视图 自需
 @property(nonatomic, weak) UIView *superView;
 
