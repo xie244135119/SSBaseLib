@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <SSBaseKit/AMDRootViewController.h>
 
 @interface AMDBaseViewModel : NSObject
 {
@@ -16,7 +17,7 @@
 }
 
 // 响应控制器
-@property(nonatomic, weak) UIViewController *senderController;
+@property(nonatomic, weak) AMDRootViewController *senderController;
 // 需要承载显示的父视图 自需
 @property(nonatomic, weak) UIView *superView;
 
