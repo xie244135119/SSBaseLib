@@ -15,7 +15,4 @@ pod "SSBaseLib"
 2. 
 
 
-###V1.0.2
-1. AMDBaseViewModel 更改senderController属性为AMDRootViewController类型
-
 

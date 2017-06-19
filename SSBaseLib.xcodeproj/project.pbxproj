@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D6F2110AB95F027031C5AF9 /* Pods_SSBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D021EBC78097523398E9BF /* Pods_SSBaseLib.framework */; };
+		AB9F540C859D967A81A09542 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20FA306F4688F0423D98ABF /* Pods_ios.framework */; };
 		CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A721EE91B1000471DE9 /* SSBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7E1EE91BBC00471DE9 /* AMDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A7A1EE91BBC00471DE9 /* AMDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */; };
@@ -47,6 +48,7 @@
 		2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.release.xcconfig"; sourceTree = "<group>"; };
 		58D021EBC78097523398E9BF /* Pods_SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DC683115BDE19013D9529C /* Pods-SSBaseLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.debug.xcconfig"; sourceTree = "<group>"; };
+		980353FE42D486D7D3D02D40 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		CB614A6F1EE91B1000471DE9 /* SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB614A721EE91B1000471DE9 /* SSBaseLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseLib.h; sourceTree = "<group>"; };
 		CB614A731EE91B1000471DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		CB614AE51EE9679800471DE9 /* SSJSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONKeyMapper.m; sourceTree = "<group>"; };
 		CB614AE61EE9679800471DE9 /* SSJSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSONValueTransformer.h; sourceTree = "<group>"; };
 		CB614AE71EE9679800471DE9 /* SSJSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONValueTransformer.m; sourceTree = "<group>"; };
+		DCEE9CD4FE581FD2C4E654DE /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		F20FA306F4688F0423D98ABF /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9F540C859D967A81A09542 /* Pods_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,8 @@
 			children = (
 				93DC683115BDE19013D9529C /* Pods-SSBaseLib.debug.xcconfig */,
 				2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */,
+				DCEE9CD4FE581FD2C4E654DE /* Pods-ios.debug.xcconfig */,
+				980353FE42D486D7D3D02D40 /* Pods-ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				58D021EBC78097523398E9BF /* Pods_SSBaseLib.framework */,
+				F20FA306F4688F0423D98ABF /* Pods_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB614AA01EE94DD400471DE9 /* Build configuration list for PBXNativeTarget "ios" */;
 			buildPhases = (
+				704A12D899149116172896A9 /* [CP] Check Pods Manifest.lock */,
 				CB614A861EE94DD400471DE9 /* Sources */,
 				CB614A871EE94DD400471DE9 /* Frameworks */,
 				CB614A881EE94DD400471DE9 /* Resources */,
+				ACEF7E16A726EFBDA80991B2 /* [CP] Embed Pods Frameworks */,
+				E1BFE913FB37964AFE8F9C78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +337,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		704A12D899149116172896A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		717B0FB918EEBD529F8585C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +367,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		ACEF7E16A726EFBDA80991B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C72E6CE8820882F0ACF06C95 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +395,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BFE913FB37964AFE8F9C78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -566,6 +622,7 @@
 		};
 		CB614A9E1EE94DD400471DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEE9CD4FE581FD2C4E654DE /* Pods-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
@@ -579,6 +636,7 @@
 		};
 		CB614A9F1EE94DD400471DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980353FE42D486D7D3D02D40 /* Pods-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
