@@ -10,8 +10,6 @@
 #import "SSJSONModel.h"
 
 @interface AMDBaseModel : SSJSONModel
-//@interface AMDBaseModel : NSObject
-
 
 @property(nonatomic,strong) NSMutableDictionary *baseOtherinfo;      //调错
 

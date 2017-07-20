@@ -10,10 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AMDBaseViewModel : NSObject
-{
-    @protected
-//    __weak AMDRootViewController *_senderController;
-}
+
 
 // 响应控制器
 @property(nonatomic, weak) UIViewController *senderController;

@@ -15,8 +15,7 @@
 
 - (void)dealloc
 {
-//    self.baseOtherinfo = nil;
-//    NSLog(@"%@ %@",[self class], NSStringFromSelector(_cmd));
+    self.baseOtherinfo = nil;
 }
 
 
@@ -24,7 +23,6 @@
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
     [self.baseOtherinfo setObject:value forKey:key];
-//    NSLog(@"%@ forUndefinedKey %@ %@",[self class],key,value);
 }
 
 - (NSMutableDictionary *)baseOtherinfo

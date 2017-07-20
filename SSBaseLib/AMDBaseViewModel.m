@@ -9,7 +9,6 @@
 #import "AMDBaseViewModel.h"
 
 @implementation AMDBaseViewModel
-//@synthesize senderController = _senderController;
 
 
 - (void)dealloc
