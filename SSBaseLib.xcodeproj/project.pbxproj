@@ -23,7 +23,6 @@
 		CB614A971EE94DD400471DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB614A951EE94DD400471DE9 /* Main.storyboard */; };
 		CB614A991EE94DD400471DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB614A981EE94DD400471DE9 /* Assets.xcassets */; };
 		CB614A9C1EE94DD400471DE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB614A9A1EE94DD400471DE9 /* LaunchScreen.storyboard */; };
-		CB614AD81EE9618400471DE9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB614AD71EE9618400471DE9 /* README.md */; };
 		CB614AE81EE9679800471DE9 /* SSJSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614ADC1EE9679800471DE9 /* SSJSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614ADD1EE9679800471DE9 /* SSJSONModel.m */; };
 		CB614AEA1EE9679800471DE9 /* SSJSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614ADE1EE9679800471DE9 /* SSJSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -434,7 +433,6 @@
 				CB3CD0B51F20822700B60C4A /* SSDateTool.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
 				CB614AEB1EE9679800471DE9 /* SSJSONModelClassProperty.m in Sources */,
-				CB614AD81EE9618400471DE9 /* README.md in Sources */,
 				CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
