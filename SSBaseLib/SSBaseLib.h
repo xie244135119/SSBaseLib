@@ -21,4 +21,7 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/AMDBaseViewModel.h>
 #import <SSBaseLib/SSJSONModelLib.h>
 #import <SSBaseLib/SSDateTool.h>
+#import <SSBaseLib/NSObject+SSBindValue.h>
+
+
 

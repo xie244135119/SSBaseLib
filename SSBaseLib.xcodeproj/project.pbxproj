@@ -12,6 +12,10 @@
 		CB3CD0B41F20822700B60C4A /* SSDateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0B21F20822700B60C4A /* SSDateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3CD0B51F20822700B60C4A /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B31F20822700B60C4A /* SSDateTool.m */; };
 		CB3CD0B61F20822700B60C4A /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B31F20822700B60C4A /* SSDateTool.m */; };
+		CB3CD0B91F2089F300B60C4A /* NSObject+SSBindValue.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0B71F2089F300B60C4A /* NSObject+SSBindValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB3CD0BA1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */; };
+		CB3CD0BB1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */; };
+		CB3CD0BD1F208A8400B60C4A /* SSGlobalVar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0BC1F208A8400B60C4A /* SSGlobalVar.h */; };
 		CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A721EE91B1000471DE9 /* SSBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7E1EE91BBC00471DE9 /* AMDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A7A1EE91BBC00471DE9 /* AMDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */; };
@@ -53,6 +57,9 @@
 		980353FE42D486D7D3D02D40 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		CB3CD0B21F20822700B60C4A /* SSDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDateTool.h; sourceTree = "<group>"; };
 		CB3CD0B31F20822700B60C4A /* SSDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDateTool.m; sourceTree = "<group>"; };
+		CB3CD0B71F2089F300B60C4A /* NSObject+SSBindValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SSBindValue.h"; sourceTree = "<group>"; };
+		CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SSBindValue.m"; sourceTree = "<group>"; };
+		CB3CD0BC1F208A8400B60C4A /* SSGlobalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGlobalVar.h; sourceTree = "<group>"; };
 		CB614A6F1EE91B1000471DE9 /* SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB614A721EE91B1000471DE9 /* SSBaseLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseLib.h; sourceTree = "<group>"; };
 		CB614A731EE91B1000471DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,8 +152,11 @@
 				CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */,
 				CB614A7C1EE91BBC00471DE9 /* AMDBaseViewModel.h */,
 				CB614A7D1EE91BBC00471DE9 /* AMDBaseViewModel.m */,
+				CB3CD0B71F2089F300B60C4A /* NSObject+SSBindValue.h */,
+				CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */,
 				CB3CD0B21F20822700B60C4A /* SSDateTool.h */,
 				CB3CD0B31F20822700B60C4A /* SSDateTool.m */,
+				CB3CD0BC1F208A8400B60C4A /* SSGlobalVar.h */,
 				CB614A721EE91B1000471DE9 /* SSBaseLib.h */,
 				CB614AD71EE9618400471DE9 /* README.md */,
 				CB614A731EE91B1000471DE9 /* Info.plist */,
@@ -229,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB614AEE1EE9679800471DE9 /* SSJSONModelLib.h in Headers */,
+				CB3CD0B91F2089F300B60C4A /* NSObject+SSBindValue.h in Headers */,
 				CB3CD0B41F20822700B60C4A /* SSDateTool.h in Headers */,
 				CB614A7E1EE91BBC00471DE9 /* AMDBaseModel.h in Headers */,
 				CB614AF11EE9679800471DE9 /* SSJSONValueTransformer.h in Headers */,
@@ -238,6 +249,7 @@
 				CB614AEC1EE9679800471DE9 /* SSJSONModelError.h in Headers */,
 				CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */,
 				CB614A801EE91BBC00471DE9 /* AMDBaseViewModel.h in Headers */,
+				CB3CD0BD1F208A8400B60C4A /* SSGlobalVar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,7 @@
 				CB614A811EE91BBC00471DE9 /* AMDBaseViewModel.m in Sources */,
 				CB614AF21EE9679800471DE9 /* SSJSONValueTransformer.m in Sources */,
 				CB3CD0B51F20822700B60C4A /* SSDateTool.m in Sources */,
+				CB3CD0BA1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
 				CB614AEB1EE9679800471DE9 /* SSJSONModelClassProperty.m in Sources */,
 				CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */,
@@ -445,6 +458,7 @@
 				CB614A911EE94DD400471DE9 /* AppDelegate.m in Sources */,
 				CB3CD0B61F20822700B60C4A /* SSDateTool.m in Sources */,
 				CB614A8E1EE94DD400471DE9 /* main.m in Sources */,
+				CB3CD0BB1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

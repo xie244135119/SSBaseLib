@@ -15,6 +15,10 @@ pod "SSBaseLib"
 2. 
 
 
-###V1.0.2
+###V1.0.3
 1. 支持SSDateTool类
+
+###V1.0.4
+1. 支持 NSObject+SSBindValue.h
+2. 支持SSGlobalVar.h 固定文件
 
