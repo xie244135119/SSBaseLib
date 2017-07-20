@@ -15,7 +15,7 @@
 		CB3CD0B91F2089F300B60C4A /* NSObject+SSBindValue.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0B71F2089F300B60C4A /* NSObject+SSBindValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB3CD0BA1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */; };
 		CB3CD0BB1F2089F300B60C4A /* NSObject+SSBindValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD0B81F2089F300B60C4A /* NSObject+SSBindValue.m */; };
-		CB3CD0BD1F208A8400B60C4A /* SSGlobalVar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0BC1F208A8400B60C4A /* SSGlobalVar.h */; };
+		CB3CD0BD1F208A8400B60C4A /* SSGlobalVar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3CD0BC1F208A8400B60C4A /* SSGlobalVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A721EE91B1000471DE9 /* SSBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7E1EE91BBC00471DE9 /* AMDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A7A1EE91BBC00471DE9 /* AMDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A7F1EE91BBC00471DE9 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A7B1EE91BBC00471DE9 /* AMDBaseModel.m */; };

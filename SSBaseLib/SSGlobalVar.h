@@ -9,7 +9,6 @@
 #ifndef SSGlobalVar_h
 #define SSGlobalVar_h
 
-
 // 字体颜色来源于RGB
 #define ColorWithRGB(r,g,b,a) [UIColor colorWithRed:(float)r/255 green:(float)g/255 blue:(float)b/255 alpha:a]
 
@@ -18,15 +17,13 @@
 #define FontBoldWithName(n,s) [UIFont fontWithName:@"HiraginoSansGB-W3" size:s]
 
 
-#prarm mark - NSUserDefaults
+// - NSUserDefaults
 //获取NSUserDefaults中的值
 #define GetDefaults(key)  [[NSUserDefaults standardUserDefaults] objectForKey:key]
 //设置NSUserDefaults中的键值对
 #define SetDefaults(key,value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
 #define SetDefaultsSynchronize() [[NSUserDefaults standardUserDefaults] synchronize]
 #define RemoveDefaults(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
-
-#prmark mark
 
 
 //屏幕宽高
