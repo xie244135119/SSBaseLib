@@ -13,7 +13,7 @@
 #define ColorWithRGB(r,g,b,a) [UIColor colorWithRed:(float)r/255 green:(float)g/255 blue:(float)b/255 alpha:a]
 
 // 字体样式
-#define FontWithName(n,s) [UIFont fontWithName:n?n:@"HiraginoSansGB-W3" size:s]
+#define FontWithName(n,s) [UIFont fontWithName:n.length>0?n:@"HiraginoSansGB-W3" size:s]
 #define FontBoldWithName(n,s) [UIFont fontWithName:@"HiraginoSansGB-W3" size:s]
 
 
