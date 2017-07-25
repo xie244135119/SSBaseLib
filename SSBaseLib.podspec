@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SSBaseLib"
-  s.version      = "1.0.4.1"
+  s.version      = "1.0.4.2"
   s.summary      = "SSBaseFramework 构成的一部分"
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SSBaseLib", "SSBaseLib/**/*.{h,m}"
+  s.source_files  = "SSBaseLib/SSBaseLib.h"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,5 +132,17 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONModel"
+	
+	#基础code
+	s.subspec 'Core' do |st|
+                st.source_files = "SSBaseLib/Base/*.{h,m}","SSBaseLib/Core/*.{h,m}"
+		st.dependency "SSBaseLib/SSJSONModel"
+	end
 
+	s.subspec 'SSJSONModel' do |st|
+		st.source_files = "SSBaseLib/SSJSONModel1/*/*.{h,m}","SSBaseLib/SSJSONModel1/SSJSONModelLib.h"
+        end
+
+
+	
 end
