@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SSBaseLib"
-  s.version      = "1.0.4.5"
+  s.version      = "1.0.4.6"
   s.summary      = "SSBaseFramework 构成的一部分"
 
   # This description is used to generate tags and improve search results.
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
-  #
+SBaseLib.podspec
 
   # s.platform     = :ios
   s.platform     = :ios, "8.0"
