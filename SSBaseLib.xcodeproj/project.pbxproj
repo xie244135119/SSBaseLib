@@ -21,7 +21,6 @@
 		CB5010A41F273F0800C6E943 /* SSDateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB50109E1F273F0700C6E943 /* SSDateTool.h */; };
 		CB5010A51F273F0800C6E943 /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50109F1F273F0700C6E943 /* SSDateTool.m */; };
 		CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50109F1F273F0700C6E943 /* SSDateTool.m */; };
-		CB5010A71F273F0800C6E943 /* SSGlobalVar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5010A01F273F0700C6E943 /* SSGlobalVar.h */; };
 		CB53B2CA1F4D181A0083A31B /* SSErrorLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */; };
 		CB53B2CB1F4D181A0083A31B /* SSErrorLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */; };
 		CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */; };
@@ -71,7 +70,6 @@
 		CB50109D1F273F0700C6E943 /* NSObject+SSBindValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SSBindValue.m"; sourceTree = "<group>"; };
 		CB50109E1F273F0700C6E943 /* SSDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDateTool.h; sourceTree = "<group>"; };
 		CB50109F1F273F0700C6E943 /* SSDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDateTool.m; sourceTree = "<group>"; };
-		CB5010A01F273F0700C6E943 /* SSGlobalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGlobalVar.h; sourceTree = "<group>"; };
 		CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSErrorLogTool.h; sourceTree = "<group>"; };
 		CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSErrorLogTool.m; sourceTree = "<group>"; };
 		CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSYLEncryptSignTool.h; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */,
 				CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */,
 				CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */,
-				CB5010A01F273F0700C6E943 /* SSGlobalVar.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 				CB5010A41F273F0800C6E943 /* SSDateTool.h in Headers */,
 				CB53B2CF1F4D18230083A31B /* SSYLEncryptSignTool.h in Headers */,
 				CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */,
-				CB5010A71F273F0800C6E943 /* SSGlobalVar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
