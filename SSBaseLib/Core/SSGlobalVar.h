@@ -19,16 +19,22 @@
 
 // - NSUserDefaults
 //获取NSUserDefaults中的值
-#define GetDefaults(key)  [[NSUserDefaults standardUserDefaults] objectForKey:key]
-//设置NSUserDefaults中的键值对
-#define SetDefaults(key,value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
-#define SetDefaultsSynchronize() [[NSUserDefaults standardUserDefaults] synchronize]
-#define RemoveDefaults(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
+//#define SSGetDefaults(key)  [[NSUserDefaults standardUserDefaults] objectForKey:key]
+////设置NSUserDefaults中的键值对
+//#define SSSetDefaults(key,value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
+//#define SSSetDefaultsSynchronize() [[NSUserDefaults standardUserDefaults] synchronize]
+//#define RemoveDefaults(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 
 
 //屏幕宽高
 #define SScreenWidth [UIScreen mainScreen].bounds.size.width
 #define SScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 图片获取
+// 从本地获取图片
+//#define SSGetFilePath(a) [[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:a]
+//
+//#define SSImageFromName(a) [[UIImage alloc]initWithContentsOfFile:GetFilePath(a)]
 
 
 
