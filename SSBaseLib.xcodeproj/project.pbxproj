@@ -22,6 +22,12 @@
 		CB5010A51F273F0800C6E943 /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50109F1F273F0700C6E943 /* SSDateTool.m */; };
 		CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50109F1F273F0700C6E943 /* SSDateTool.m */; };
 		CB5010A71F273F0800C6E943 /* SSGlobalVar.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5010A01F273F0700C6E943 /* SSGlobalVar.h */; };
+		CB53B2CA1F4D181A0083A31B /* SSErrorLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */; };
+		CB53B2CB1F4D181A0083A31B /* SSErrorLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */; };
+		CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */; };
+		CB53B2CF1F4D18230083A31B /* SSYLEncryptSignTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */; };
+		CB53B2D01F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */; };
+		CB53B2D11F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */; };
 		CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614A721EE91B1000471DE9 /* SSBaseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614A8E1EE94DD400471DE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A8D1EE94DD400471DE9 /* main.m */; };
 		CB614A911EE94DD400471DE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614A901EE94DD400471DE9 /* AppDelegate.m */; };
@@ -66,6 +72,10 @@
 		CB50109E1F273F0700C6E943 /* SSDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDateTool.h; sourceTree = "<group>"; };
 		CB50109F1F273F0700C6E943 /* SSDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDateTool.m; sourceTree = "<group>"; };
 		CB5010A01F273F0700C6E943 /* SSGlobalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGlobalVar.h; sourceTree = "<group>"; };
+		CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSErrorLogTool.h; sourceTree = "<group>"; };
+		CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSErrorLogTool.m; sourceTree = "<group>"; };
+		CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSYLEncryptSignTool.h; sourceTree = "<group>"; };
+		CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSYLEncryptSignTool.m; sourceTree = "<group>"; };
 		CB614A6F1EE91B1000471DE9 /* SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB614A721EE91B1000471DE9 /* SSBaseLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseLib.h; sourceTree = "<group>"; };
 		CB614A731EE91B1000471DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +154,10 @@
 				CB50109D1F273F0700C6E943 /* NSObject+SSBindValue.m */,
 				CB50109E1F273F0700C6E943 /* SSDateTool.h */,
 				CB50109F1F273F0700C6E943 /* SSDateTool.m */,
+				CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */,
+				CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */,
+				CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */,
+				CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */,
 				CB5010A01F273F0700C6E943 /* SSGlobalVar.h */,
 			);
 			path = Core;
@@ -264,8 +278,10 @@
 				CB5010981F273F0400C6E943 /* AMDBaseViewModel.h in Headers */,
 				CB614AEF1EE9679800471DE9 /* SSJSONKeyMapper.h in Headers */,
 				CB5010A11F273F0700C6E943 /* NSObject+SSBindValue.h in Headers */,
+				CB53B2CA1F4D181A0083A31B /* SSErrorLogTool.h in Headers */,
 				CB614AEC1EE9679800471DE9 /* SSJSONModelError.h in Headers */,
 				CB5010A41F273F0800C6E943 /* SSDateTool.h in Headers */,
+				CB53B2CF1F4D18230083A31B /* SSYLEncryptSignTool.h in Headers */,
 				CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */,
 				CB5010A71F273F0800C6E943 /* SSGlobalVar.h in Headers */,
 			);
@@ -456,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB53B2CB1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
 				CB614AED1EE9679800471DE9 /* SSJSONModelError.m in Sources */,
 				CB5010991F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
 				CB614AF01EE9679800471DE9 /* SSJSONKeyMapper.m in Sources */,
@@ -463,6 +480,7 @@
 				CB614AF21EE9679800471DE9 /* SSJSONValueTransformer.m in Sources */,
 				CB5010A21F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010961F273F0400C6E943 /* AMDBaseModel.m in Sources */,
+				CB53B2D01F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
 				CB614AEB1EE9679800471DE9 /* SSJSONModelClassProperty.m in Sources */,
 			);
@@ -472,9 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
 				CB5010A31F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */,
 				CB614A941EE94DD400471DE9 /* ViewController.m in Sources */,
+				CB53B2D11F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */,
 				CB614A911EE94DD400471DE9 /* AppDelegate.m in Sources */,
 				CB614A8E1EE94DD400471DE9 /* main.m in Sources */,
 				CB50109A1F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
