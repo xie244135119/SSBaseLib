@@ -45,17 +45,17 @@
 		CB614AF01EE9679800471DE9 /* SSJSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE51EE9679800471DE9 /* SSJSONKeyMapper.m */; };
 		CB614AF11EE9679800471DE9 /* SSJSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = CB614AE61EE9679800471DE9 /* SSJSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB614AF21EE9679800471DE9 /* SSJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE71EE9679800471DE9 /* SSJSONValueTransformer.m */; };
+		CB644C521F7CA0A4001BF127 /* SSImageTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB644C501F7CA0A4001BF127 /* SSImageTool.h */; };
+		CB644C531F7CA0A4001BF127 /* SSImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB644C511F7CA0A4001BF127 /* SSImageTool.m */; };
+		CB644C541F7CA0A4001BF127 /* SSImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB644C511F7CA0A4001BF127 /* SSImageTool.m */; };
+		CB644C571F7CA6AD001BF127 /* SSJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614ADD1EE9679800471DE9 /* SSJSONModel.m */; };
+		CB644C581F7CA6AF001BF127 /* SSJSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614ADF1EE9679800471DE9 /* SSJSONModelClassProperty.m */; };
+		CB644C591F7CA6B1001BF127 /* SSJSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE11EE9679800471DE9 /* SSJSONModelError.m */; };
+		CB644C5A1F7CA6B5001BF127 /* SSJSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE51EE9679800471DE9 /* SSJSONKeyMapper.m */; };
+		CB644C5B1F7CA6B7001BF127 /* SSJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE71EE9679800471DE9 /* SSJSONValueTransformer.m */; };
+		CB644C5D1F7CA77B001BF127 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB644C5C1F7CA762001BF127 /* test@2x.png */; };
+		CB644C5E1F7CA77C001BF127 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB644C5C1F7CA762001BF127 /* test@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CB614AF41EE96AC500471DE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB614A661EE91B1000471DE9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB614A6E1EE91B1000471DE9;
-			remoteInfo = SSBaseLib;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +99,9 @@
 		CB614AE51EE9679800471DE9 /* SSJSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONKeyMapper.m; sourceTree = "<group>"; };
 		CB614AE61EE9679800471DE9 /* SSJSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSONValueTransformer.h; sourceTree = "<group>"; };
 		CB614AE71EE9679800471DE9 /* SSJSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSONValueTransformer.m; sourceTree = "<group>"; };
+		CB644C501F7CA0A4001BF127 /* SSImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSImageTool.h; sourceTree = "<group>"; };
+		CB644C511F7CA0A4001BF127 /* SSImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSImageTool.m; sourceTree = "<group>"; };
+		CB644C5C1F7CA762001BF127 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 		DCEE9CD4FE581FD2C4E654DE /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F20FA306F4688F0423D98ABF /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +159,8 @@
 				CB53B2C91F4D181A0083A31B /* SSErrorLogTool.m */,
 				CB53B2CD1F4D18230083A31B /* SSYLEncryptSignTool.h */,
 				CB53B2CE1F4D18230083A31B /* SSYLEncryptSignTool.m */,
+				CB644C501F7CA0A4001BF127 /* SSImageTool.h */,
+				CB644C511F7CA0A4001BF127 /* SSImageTool.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 		CB614A8B1EE94DD400471DE9 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				CB644C5C1F7CA762001BF127 /* test@2x.png */,
 				CB614A8F1EE94DD400471DE9 /* AppDelegate.h */,
 				CB614A901EE94DD400471DE9 /* AppDelegate.m */,
 				CB614A921EE94DD400471DE9 /* ViewController.h */,
@@ -273,6 +279,7 @@
 				CB614AE81EE9679800471DE9 /* SSJSONModel.h in Headers */,
 				CB614AEA1EE9679800471DE9 /* SSJSONModelClassProperty.h in Headers */,
 				CB5010981F273F0400C6E943 /* AMDBaseViewModel.h in Headers */,
+				CB644C521F7CA0A4001BF127 /* SSImageTool.h in Headers */,
 				CB614AEF1EE9679800471DE9 /* SSJSONKeyMapper.h in Headers */,
 				CB5010A11F273F0700C6E943 /* NSObject+SSBindValue.h in Headers */,
 				CB53B2CA1F4D181A0083A31B /* SSErrorLogTool.h in Headers */,
@@ -320,7 +327,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CB614AF51EE96AC500471DE9 /* PBXTargetDependency */,
 			);
 			name = ios;
 			productName = ios;
@@ -333,7 +339,7 @@
 		CB614A661EE91B1000471DE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SunSet;
 				TargetAttributes = {
 					CB614A6E1EE91B1000471DE9 = {
@@ -370,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB644C5E1F7CA77C001BF127 /* test@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +387,7 @@
 				CB614A9C1EE94DD400471DE9 /* LaunchScreen.storyboard in Resources */,
 				CB614A991EE94DD400471DE9 /* Assets.xcassets in Resources */,
 				CB614A971EE94DD400471DE9 /* Main.storyboard in Resources */,
+				CB644C5D1F7CA77B001BF127 /* test@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +487,7 @@
 				CB53B2D01F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
 				CB614AEB1EE9679800471DE9 /* SSJSONModelClassProperty.m in Sources */,
+				CB644C531F7CA0A4001BF127 /* SSImageTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,11 +496,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
+				CB644C541F7CA0A4001BF127 /* SSImageTool.m in Sources */,
 				CB5010A31F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */,
 				CB614A941EE94DD400471DE9 /* ViewController.m in Sources */,
+				CB644C581F7CA6AF001BF127 /* SSJSONModelClassProperty.m in Sources */,
 				CB53B2D11F4D18230083A31B /* SSYLEncryptSignTool.m in Sources */,
+				CB644C5B1F7CA6B7001BF127 /* SSJSONValueTransformer.m in Sources */,
 				CB614A911EE94DD400471DE9 /* AppDelegate.m in Sources */,
+				CB644C5A1F7CA6B5001BF127 /* SSJSONKeyMapper.m in Sources */,
+				CB644C591F7CA6B1001BF127 /* SSJSONModelError.m in Sources */,
+				CB644C571F7CA6AD001BF127 /* SSJSONModel.m in Sources */,
 				CB614A8E1EE94DD400471DE9 /* main.m in Sources */,
 				CB50109A1F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
 				CB5010971F273F0400C6E943 /* AMDBaseModel.m in Sources */,
@@ -499,14 +514,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB614AF51EE96AC500471DE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB614A6E1EE91B1000471DE9 /* SSBaseLib */;
-			targetProxy = CB614AF41EE96AC500471DE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB614A951EE94DD400471DE9 /* Main.storyboard */ = {
@@ -538,7 +545,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -546,7 +555,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -590,7 +603,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -598,7 +613,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -631,7 +650,7 @@
 			baseConfigurationReference = 93DC683115BDE19013D9529C /* Pods-SSBaseLib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -657,7 +676,7 @@
 			baseConfigurationReference = 2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

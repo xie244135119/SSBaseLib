@@ -11,6 +11,7 @@
 #import "AMDBaseViewModel.h"
 #import "SSJSONModel.h"
 #import "SSJSONValueTransformer.h"
+#import "SSImageTool.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test];
+    [self test2];
 }
 
 
@@ -40,6 +41,21 @@
     SSJSONModel *model = [[SSJSONModel alloc]init];
     AMDBaseViewModel *viewmodel = [[AMDBaseViewModel alloc]init];
     SSJSONKeyMapper *mapper = [[SSJSONKeyMapper alloc]init];
+}
+
+
+- (void)test2
+{
+    CGSize size = CGSizeMake(200, 200);
+    CGRect rect = CGRectMake(20, 20, size.width, size.height);
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
+    [self.view addSubview:imageView];
+    imageView.layer.borderWidth = 1;
+    
+    // 裁剪
+    UIImage *originimage = [UIImage imageNamed:@"test.png"];
+    UIImage *clipimage = [SSImageTool clipWithSize:size clipType:1 image:originimage];
+    imageView.image = clipimage;
 }
 
 
