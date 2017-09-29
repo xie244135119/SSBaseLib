@@ -55,6 +55,8 @@
 		CB644C5B1F7CA6B7001BF127 /* SSJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614AE71EE9679800471DE9 /* SSJSONValueTransformer.m */; };
 		CB644C5D1F7CA77B001BF127 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB644C5C1F7CA762001BF127 /* test@2x.png */; };
 		CB644C5E1F7CA77C001BF127 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB644C5C1F7CA762001BF127 /* test@2x.png */; };
+		CB644C641F7CE2F1001BF127 /* 111@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB644C631F7CE2C3001BF127 /* 111@2x.jpg */; };
+		CB644C651F7CE2F2001BF127 /* 111@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB644C631F7CE2C3001BF127 /* 111@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,7 @@
 		CB644C501F7CA0A4001BF127 /* SSImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSImageTool.h; sourceTree = "<group>"; };
 		CB644C511F7CA0A4001BF127 /* SSImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSImageTool.m; sourceTree = "<group>"; };
 		CB644C5C1F7CA762001BF127 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		CB644C631F7CE2C3001BF127 /* 111@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "111@2x.jpg"; sourceTree = "<group>"; };
 		DCEE9CD4FE581FD2C4E654DE /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F20FA306F4688F0423D98ABF /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +204,7 @@
 		CB614A8B1EE94DD400471DE9 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				CB644C631F7CE2C3001BF127 /* 111@2x.jpg */,
 				CB644C5C1F7CA762001BF127 /* test@2x.png */,
 				CB614A8F1EE94DD400471DE9 /* AppDelegate.h */,
 				CB614A901EE94DD400471DE9 /* AppDelegate.m */,
@@ -376,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB644C651F7CE2F2001BF127 /* 111@2x.jpg in Resources */,
 				CB644C5E1F7CA77C001BF127 /* test@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB614A9C1EE94DD400471DE9 /* LaunchScreen.storyboard in Resources */,
+				CB644C641F7CE2F1001BF127 /* 111@2x.jpg in Resources */,
 				CB614A991EE94DD400471DE9 /* Assets.xcassets in Resources */,
 				CB614A971EE94DD400471DE9 /* Main.storyboard in Resources */,
 				CB644C5D1F7CA77B001BF127 /* test@2x.png in Resources */,

@@ -46,14 +46,15 @@
 
 - (void)test2
 {
-    CGSize size = CGSizeMake(200, 200);
-    CGRect rect = CGRectMake(20, 20, size.width, size.height);
+    CGSize size = CGSizeMake(475, 690);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
+//    imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:imageView];
     imageView.layer.borderWidth = 1;
     
     // 裁剪
-    UIImage *originimage = [UIImage imageNamed:@"test.png"];
+    UIImage *originimage = [UIImage imageNamed:@"111.jpg"];
     UIImage *clipimage = [SSImageTool clipWithSize:size clipType:1 image:originimage];
     imageView.image = clipimage;
 }
