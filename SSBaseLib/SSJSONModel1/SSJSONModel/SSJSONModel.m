@@ -1198,7 +1198,9 @@ static SSJSONKeyMapper* globalKeyMapper = nil;
         }
         else
         {
-            *err = [SSJSONModelError errorInvalidDataWithTypeMismatch:@"Only dictionaries and arrays are supported"];
+            if (err) {
+                *err = [SSJSONModelError errorInvalidDataWithTypeMismatch:@"Only dictionaries and arrays are supported"];
+            }
             return nil;
         }
     }
@@ -1392,9 +1394,9 @@ static SSJSONKeyMapper* globalKeyMapper = nil;
     [self mergeFromDictionary:dict useKeyMapping:useKeyMapping error:nil];
 }
 
-- (void)mergeFromDictionary:(NSDictionary *)dict useKeyMapping:(BOOL)useKeyMapping error:(NSError **)error
+- (BOOL)mergeFromDictionary:(NSDictionary *)dict useKeyMapping:(BOOL)useKeyMapping error:(NSError **)error
 {
-    [self __importDictionary:dict withKeyMapper:(useKeyMapping)? self.__keyMapper:nil validation:NO error:error];
+    return [self __importDictionary:dict withKeyMapper:(useKeyMapping)? self.__keyMapper:nil validation:NO error:error];
 }
 
 #pragma mark - NSCopying, NSCoding

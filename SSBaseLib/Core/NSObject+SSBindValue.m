@@ -18,26 +18,26 @@
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, [key cStringUsingEncoding:30], value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)bindCopyValue:(id)value forKey:(NSString *)key
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, [key cStringUsingEncoding:30], value, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (void)bindWeakValue:(id)value forKey:(NSString *)key
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, [key cStringUsingEncoding:30], value, OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (id)getBindValueForKey:(NSString *)key
 {
-    return objc_getAssociatedObject(self, [key cStringUsingEncoding:30]);
+    return objc_getAssociatedObject(self, &key);
 }
 
 

@@ -24,6 +24,9 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/NSObject+SSBindValue.h>
 #import <SSBaseLib/SSErrorLogTool.h>
 #import <SSBaseLib/SSYLEncryptSignTool.h>
+#import <SSBaseLib/SSImageTool.h>
+#import <SSBaseLib/UIView+AMD.h>
+#import <SSBaseLib/SSTool.h>
 
 
 
