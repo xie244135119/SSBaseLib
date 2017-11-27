@@ -18,26 +18,26 @@
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(key), value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)bindCopyValue:(id)value forKey:(NSString *)key
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(key), value, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (void)bindWeakValue:(id)value forKey:(NSString *)key
 {
 //    if (value == nil) return;
     
-    objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(key), value, OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (id)getBindValueForKey:(NSString *)key
 {
-    return objc_getAssociatedObject(self, &key);
+    return objc_getAssociatedObject(self, @selector(key));
 }
 
 
@@ -54,21 +54,22 @@
     objc_property_t *propertys = class_copyPropertyList([self class], &properycount);
     for (int i =0; i<properycount; i++) {
         objc_property_t property = propertys[i];
-//        const char *propertyname = property_getName(property);
+        const char *propertyname = property_getName(property);
+        [array addObject:[NSString stringWithUTF8String:propertyname]];
 //        const char *propertyattitudes = property_getAttributes(property);
 //         NSLog(@" %s  %s",propertyname,propertyattitudes);
-        unsigned int attributecount = 0;
-        objc_property_attribute_t *attribute_ts = property_copyAttributeList(property, &attributecount);
-        for (int i =0; i<attributecount; i++) {
-            objc_property_attribute_t attribute = attribute_ts[i];
-            NSString *attributename = [[NSString alloc]initWithUTF8String:attribute.name];
-//            NSString *attributevalue = [[NSString alloc]initWithUTF8String:attribute.value];
-            if ([attributename isEqualToString:@"T"]) {
-//                Class class = NSClassFromString(attributevalue);
-//                NSLog(@" %@ ",NSStringFromClass(class));
-            }
-//            NSLog(@" %@ %@ ",attributename,attributevalue);
-        }
+//        unsigned int attributecount = 0;
+//        objc_property_attribute_t *attribute_ts = property_copyAttributeList(property, &attributecount);
+//        for (int i =0; i<attributecount; i++) {
+//            objc_property_attribute_t attribute = attribute_ts[i];
+//            NSString *attributename = [[NSString alloc]initWithUTF8String:attribute.name];
+////            NSString *attributevalue = [[NSString alloc]initWithUTF8String:attribute.value];
+//            if ([attributename isEqualToString:@"T"]) {
+////                Class class = NSClassFromString(attributevalue);
+////                NSLog(@" %@ ",NSStringFromClass(class));
+//            }
+////            NSLog(@" %@ %@ ",attributename,attributevalue);
+//        }
     }
     
     return array;
