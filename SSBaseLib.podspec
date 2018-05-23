@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SSBaseLib"
-  s.version      = "1.0.4.11"
+  s.version      = "1.0.4.12"
   s.summary      = "SSBaseFramework 构成的一部分"
 
   # This description is used to generate tags and improve search results.
