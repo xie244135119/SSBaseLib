@@ -27,6 +27,6 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/SSImageTool.h>
 #import <SSBaseLib/UIView+AMD.h>
 #import <SSBaseLib/SSTool.h>
-
-
+#import <SSBaseLib/UIImage+Color.h>
+#import <SSBaseLib/UIImage+FixOrientation.h>
 
