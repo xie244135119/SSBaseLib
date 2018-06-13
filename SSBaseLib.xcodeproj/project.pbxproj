@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7268FD9020B565750002BB88 /* SSKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7268FD8E20B565750002BB88 /* SSKeyChain.h */; };
+		7268FD9120B565750002BB88 /* SSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7268FD8F20B565750002BB88 /* SSKeyChain.m */; };
+		7268FD9220B565750002BB88 /* SSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7268FD8F20B565750002BB88 /* SSKeyChain.m */; };
+		726C1E1E20B7D912008AD300 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 726C1E1A20B7D911008AD300 /* UIImage+Color.h */; };
+		726C1E1F20B7D912008AD300 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 726C1E1B20B7D911008AD300 /* UIImage+FixOrientation.m */; };
+		726C1E2020B7D912008AD300 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 726C1E1B20B7D911008AD300 /* UIImage+FixOrientation.m */; };
+		726C1E2120B7D912008AD300 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 726C1E1C20B7D912008AD300 /* UIImage+Color.m */; };
+		726C1E2220B7D912008AD300 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 726C1E1C20B7D912008AD300 /* UIImage+Color.m */; };
+		726C1E2320B7D912008AD300 /* UIImage+FixOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 726C1E1D20B7D912008AD300 /* UIImage+FixOrientation.h */; };
 		9D6F2110AB95F027031C5AF9 /* Pods_SSBaseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D021EBC78097523398E9BF /* Pods_SSBaseLib.framework */; };
 		AB9F540C859D967A81A09542 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20FA306F4688F0423D98ABF /* Pods_ios.framework */; };
 		CB15A4681FCD78E500F1794E /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15A4661FCD78E200F1794E /* UIImage+FixOrientation.m */; };
@@ -80,6 +89,12 @@
 /* Begin PBXFileReference section */
 		2E85ACDDAB89B55A80E5B39E /* Pods-SSBaseLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.release.xcconfig"; sourceTree = "<group>"; };
 		58D021EBC78097523398E9BF /* Pods_SSBaseLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSBaseLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7268FD8E20B565750002BB88 /* SSKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeyChain.h; sourceTree = "<group>"; };
+		7268FD8F20B565750002BB88 /* SSKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeyChain.m; sourceTree = "<group>"; };
+		726C1E1A20B7D911008AD300 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		726C1E1B20B7D911008AD300 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		726C1E1C20B7D912008AD300 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		726C1E1D20B7D912008AD300 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
 		93DC683115BDE19013D9529C /* Pods-SSBaseLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseLib/Pods-SSBaseLib.debug.xcconfig"; sourceTree = "<group>"; };
 		980353FE42D486D7D3D02D40 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		CB15A4661FCD78E200F1794E /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
@@ -173,10 +188,16 @@
 		CB15A4651FCD78D800F1794E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				CB15A4671FCD78E200F1794E /* UIImage+FixOrientation.h */,
-				CB15A4661FCD78E200F1794E /* UIImage+FixOrientation.m */,
 				CB2783871FD64DAD00FC3A3C /* NSString+CoderDecoder.h */,
 				CB2783881FD64DAD00FC3A3C /* NSString+CoderDecoder.m */,
+				726C1E1A20B7D911008AD300 /* UIImage+Color.h */,
+				726C1E1C20B7D912008AD300 /* UIImage+Color.m */,
+				726C1E1D20B7D912008AD300 /* UIImage+FixOrientation.h */,
+				726C1E1B20B7D911008AD300 /* UIImage+FixOrientation.m */,
+				CB40C0A51FA8829600D1A6F5 /* UIView+AMD.h */,
+				CB40C0A61FA8829600D1A6F5 /* UIView+AMD.m */,
+				CB50109C1F273F0700C6E943 /* NSObject+SSBindValue.h */,
+				CB50109D1F273F0700C6E943 /* NSObject+SSBindValue.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -195,8 +216,8 @@
 		CB50109B1F273F0700C6E943 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CB50109C1F273F0700C6E943 /* NSObject+SSBindValue.h */,
-				CB50109D1F273F0700C6E943 /* NSObject+SSBindValue.m */,
+				7268FD8E20B565750002BB88 /* SSKeyChain.h */,
+				7268FD8F20B565750002BB88 /* SSKeyChain.m */,
 				CB50109E1F273F0700C6E943 /* SSDateTool.h */,
 				CB50109F1F273F0700C6E943 /* SSDateTool.m */,
 				CB53B2C81F4D181A0083A31B /* SSErrorLogTool.h */,
@@ -205,8 +226,6 @@
 				CB53B2CE1F4D18230083A31B /* SSEncryptSignTool.m */,
 				CB644C501F7CA0A4001BF127 /* SSImageTool.h */,
 				CB644C511F7CA0A4001BF127 /* SSImageTool.m */,
-				CB40C0A51FA8829600D1A6F5 /* UIView+AMD.h */,
-				CB40C0A61FA8829600D1A6F5 /* UIView+AMD.m */,
 				CB40C0AA1FA885CC00D1A6F5 /* SSTool.h */,
 				CB40C0AB1FA885CC00D1A6F5 /* SSTool.m */,
 				CB15A46C1FCD78F600F1794E /* SSKeyChain.h */,
@@ -217,6 +236,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		CB51254F20D0CD4500F878C4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				CB15A4661FCD78E200F1794E /* UIImage+FixOrientation.m */,
+				CB15A4671FCD78E200F1794E /* UIImage+FixOrientation.h */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		CB614A651EE91B1000471DE9 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +253,7 @@
 				CB614A701EE91B1000471DE9 /* Products */,
 				559218DB64B0A5358E876A66 /* Pods */,
 				CE76D6BF9E5D59949EBBDB24 /* Frameworks */,
+				CB51254F20D0CD4500F878C4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,9 +365,12 @@
 				CB614AE81EE9679800471DE9 /* SSJSONModel.h in Headers */,
 				CB614AEA1EE9679800471DE9 /* SSJSONModelClassProperty.h in Headers */,
 				CB688DF01FE7687D00920098 /* SSFPSControl.h in Headers */,
+				726C1E1E20B7D912008AD300 /* UIImage+Color.h in Headers */,
 				CB5010981F273F0400C6E943 /* AMDBaseViewModel.h in Headers */,
+				7268FD9020B565750002BB88 /* SSKeyChain.h in Headers */,
 				CB644C521F7CA0A4001BF127 /* SSImageTool.h in Headers */,
 				CB614AEF1EE9679800471DE9 /* SSJSONKeyMapper.h in Headers */,
+				726C1E2320B7D912008AD300 /* UIImage+FixOrientation.h in Headers */,
 				CB5010A11F273F0700C6E943 /* NSObject+SSBindValue.h in Headers */,
 				CB40C0A71FA8829600D1A6F5 /* UIView+AMD.h in Headers */,
 				CB2783891FD64DAD00FC3A3C /* NSString+CoderDecoder.h in Headers */,
@@ -540,6 +572,8 @@
 			files = (
 				CB53B2CB1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
 				CB614AED1EE9679800471DE9 /* SSJSONModelError.m in Sources */,
+				726C1E1F20B7D912008AD300 /* UIImage+FixOrientation.m in Sources */,
+				726C1E2120B7D912008AD300 /* UIImage+Color.m in Sources */,
 				CB5010991F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
 				CB614AF01EE9679800471DE9 /* SSJSONKeyMapper.m in Sources */,
 				CB5010A51F273F0800C6E943 /* SSDateTool.m in Sources */,
@@ -548,6 +582,7 @@
 				CB15A46D1FCD78F900F1794E /* SSKeyChain.m in Sources */,
 				CB614AF21EE9679800471DE9 /* SSJSONValueTransformer.m in Sources */,
 				CB5010A21F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
+				7268FD9120B565750002BB88 /* SSKeyChain.m in Sources */,
 				CB5010961F273F0400C6E943 /* AMDBaseModel.m in Sources */,
 				CB53B2D01F4D18230083A31B /* SSEncryptSignTool.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
@@ -565,6 +600,7 @@
 			files = (
 				CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
 				CB644C541F7CA0A4001BF127 /* SSImageTool.m in Sources */,
+				7268FD9220B565750002BB88 /* SSKeyChain.m in Sources */,
 				CB5010A31F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */,
 				CB27838B1FD64DAD00FC3A3C /* NSString+CoderDecoder.m in Sources */,
@@ -579,9 +615,11 @@
 				CB644C591F7CA6B1001BF127 /* SSJSONModelError.m in Sources */,
 				CB15A46E1FCD78FB00F1794E /* SSKeyChain.m in Sources */,
 				CB40C0AE1FA885CC00D1A6F5 /* SSTool.m in Sources */,
+				726C1E2020B7D912008AD300 /* UIImage+FixOrientation.m in Sources */,
 				CB644C571F7CA6AD001BF127 /* SSJSONModel.m in Sources */,
 				CB614A8E1EE94DD400471DE9 /* main.m in Sources */,
 				CB40C0A91FA8829600D1A6F5 /* UIView+AMD.m in Sources */,
+				726C1E2220B7D912008AD300 /* UIImage+Color.m in Sources */,
 				CB50109A1F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
 				CB5010971F273F0400C6E943 /* AMDBaseModel.m in Sources */,
 			);
