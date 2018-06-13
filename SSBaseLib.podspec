@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SSBaseLib"
-  s.version      = "1.0.4.14"
+  s.version      = "1.0.4.15"
   s.summary      = "SSBaseFramework 构成的一部分"
 
   # This description is used to generate tags and improve search results.
@@ -137,6 +137,10 @@ Pod::Spec.new do |s|
 	s.subspec 'Core' do |st|
                 st.source_files = "SSBaseLib/Base/*.{h,m}","SSBaseLib/Core/*.{h,m}"
 		st.dependency "SSBaseLib/SSJSONModel"
+
+	end
+	s.subspec 'Category' do |st|
+                st.source_files = "SSBaseLib/Category/*.{h,m}"
 	end
 
 	s.subspec 'SSJSONModel' do |st|

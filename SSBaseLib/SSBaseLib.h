@@ -28,11 +28,11 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/SSKeyChain.h>
 #import <SSBaseLib/SSFPSControl.h>
 // 去掉类别
-//#import <SSBaseLib/UIImage+FixOrientation.h>
-//#import <SSBaseLib/UIImage+Color.h>
-//#import <SSBaseLib/NSString+CoderDecoder.h>
-//#import <SSBaseLib/NSObject+SSBindValue.h>
-//#import <SSBaseLib/UIView+AMD.h>
+#import <SSBaseLib/UIImage+FixOrientation.h>
+#import <SSBaseLib/UIImage+Color.h>
+#import <SSBaseLib/NSString+CoderDecoder.h>
+#import <SSBaseLib/NSObject+SSBindValue.h>
+#import <SSBaseLib/UIView+AMD.h>
 
 
 
