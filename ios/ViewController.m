@@ -12,16 +12,23 @@
 #import "SSJSONModel.h"
 #import "SSJSONValueTransformer.h"
 #import "SSImageTool.h"
+#import "SSFPSControl.h"
+#import "SSEncryptSignTool.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<SSFPSControlDelegate>
+{
+    SSFPSControl *_fpsControl;
+    __weak UILabel *_fpsLabel;     //
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test2];
+//    [self test2];
+//    [self testFps];
+    [self test3];
 }
 
 
@@ -60,6 +67,49 @@
 }
 
 
+- (void)testFps
+{
+    if (_fpsControl == nil) {
+        _fpsControl = [[SSFPSControl alloc]init];
+        _fpsControl.delegate = self;
+    }
+    
+    UILabel *fpslb = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 40, 30)];
+    fpslb.backgroundColor = [UIColor blackColor];
+    fpslb.textAlignment = NSTextAlignmentCenter;
+    fpslb.textColor = [UIColor whiteColor];
+    fpslb.layer.cornerRadius = 3;
+    fpslb.layer.masksToBounds = YES;
+    [self.view addSubview:fpslb];
+    _fpsLabel = fpslb;
+}
+
+
+#pragma mark - SSFPSControlDelegate
+//
+- (void)control:(SSFPSControl *)control NSInteger:(NSInteger)fps
+{
+    _fpsLabel.text = [[NSString alloc]initWithFormat:@"%li",(long)fps];
+}
+
+
+#pragma mark - private api
+//
+- (void)test3
+{
+    NSString *secret = @"secret";
+    NSString *string = @"阿斯顿发无二翁asdddddasd";
+    
+    NSString *resault = [SSEncryptSignTool encryptAES:string secret:secret];
+    NSString *value = [SSEncryptSignTool dencryptAES:resault secret:secret];
+    NSLog(@" 加密结果：%@，解密结果：%@ ",resault, value);
+}
 
 
 @end
+
+
+
+
+
+

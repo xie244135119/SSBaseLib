@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SSJSONModel.h"
 
-@interface AMDBaseModel : SSJSONModel
+@interface AMDBaseModel : SSJSONModel<NSCoding>
 
 @property(nonatomic,strong) NSMutableDictionary *baseOtherinfo;      //调错
 

@@ -23,10 +23,17 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/SSDateTool.h>
 #import <SSBaseLib/NSObject+SSBindValue.h>
 #import <SSBaseLib/SSErrorLogTool.h>
-#import <SSBaseLib/SSYLEncryptSignTool.h>
+#import <SSBaseLib/SSEncryptSignTool.h>
 #import <SSBaseLib/SSImageTool.h>
 #import <SSBaseLib/UIView+AMD.h>
 #import <SSBaseLib/SSTool.h>
+#import <SSBaseLib/SSKeyChain.h>
+#import <SSBaseLib/UIImage+FixOrientation.h>
+#import <SSBaseLib/NSString+CoderDecoder.h>
+#import <SSBaseLib/SSFPSControl.h>
+
+
+
 
 
 

@@ -64,6 +64,41 @@
 }
 
 
++ (UIImage *)scaleWithMaxWidth:(CGFloat)maxWidth
+                         image:(UIImage *)originImage
+{
+    if (maxWidth == 0 || originImage == nil) {
+        return nil;
+    }
+    
+    CGFloat maxheight = originImage.size.height*maxWidth/originImage.size.width;
+    CGSize size = CGSizeMake(maxWidth, maxheight);
+    return [self scaleWithSize:size image:originImage];
+}
+
++ (UIImage *)scaleWithMaxHeight:(CGFloat)maxHeight
+                          image:(UIImage *)originImage
+{
+    if (maxHeight == 0 || originImage == nil) {
+        return nil;
+    }
+    
+    CGFloat maxWidth = originImage.size.width*maxHeight/originImage.size.height;
+    return [self scaleWithSize:CGSizeMake(maxWidth, maxHeight) image:originImage];
+}
+
++ (UIImage *)scaleWithSize:(CGSize)size
+                     image:(UIImage *)originImage
+{
+    UIGraphicsBeginImageContext(size);
+    [originImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+
+
 
 @end
 

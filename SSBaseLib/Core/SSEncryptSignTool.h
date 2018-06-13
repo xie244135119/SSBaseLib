@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SSYLEncryptSignTool : NSObject
+@interface SSEncryptSignTool : NSObject
 
 /******************************************************************************
  函数名称 : + (NSString *)base64StringFromText:(NSString *)text
@@ -40,7 +40,6 @@
  ******************************************************************************/
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 
-
 /******************************************************************************
  函数名称 : + (NSString *)base64EncodedStringFrom:(NSData *)data
  函数描述 : 文本数据转换为base64格式字符串
@@ -50,6 +49,18 @@
  备注信息 :
  ******************************************************************************/
 + (NSString *)base64EncodedStringFrom:(NSData *)data;
+
+/**
+ AES加密 和 解密
+
+ @param string 加密铭文
+ @param secret 加密秘钥
+ @return 加密值
+ */
++ (NSString *)encryptAES:(NSString *)string
+                  secret:(NSString *)secret;
++ (NSString *)dencryptAES:(NSString *)string
+                  secret:(NSString *)secret;
 
 
 

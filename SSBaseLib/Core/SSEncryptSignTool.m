@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 SunSet. All rights reserved.
 //
 
-#import "SSYLEncryptSignTool.h"
+#import "SSEncryptSignTool.h"
 #import <CommonCrypto/CommonCryptor.h>
 
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-@implementation SSYLEncryptSignTool
+@implementation SSEncryptSignTool
 
 
 + (NSString *)base64StringFromText:(NSString *)text
@@ -161,9 +161,87 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     return [[NSString alloc] initWithBytesNoCopy:characters length:length encoding:NSASCIIStringEncoding freeWhenDone:YES];
 }
 
++ (NSString *)encryptAES:(NSString *)string
+                  secret:(NSString *)secret
+{
+    NSData *contentData = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSUInteger dataLength = contentData.length;
+    // 为结束符'\0' +1
+    const int kKeySize = kCCKeySizeAES128;
+    char keyPtr[kKeySize + 1];
+    memset(keyPtr, 0, sizeof(keyPtr));
+    [secret getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+    // 密文长度 <= 明文长度 + BlockSize
+    size_t encryptSize = dataLength + kCCBlockSizeAES128;
+    void *encryptedBytes = malloc(encryptSize);
+    size_t actualOutSize = 0;
+//    NSData *initVector = [@"initVector" dataUsingEncoding:NSUTF8StringEncoding];
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding,
+                                          keyPtr,
+                                          kCCBlockSizeAES128,
+                                          NULL,
+                                          contentData.bytes,
+                                          dataLength,
+                                          encryptedBytes,
+                                          encryptSize,
+                                          &actualOutSize);
+    if (cryptStatus == kCCSuccess) {
+        //
+        NSData *data = [NSData dataWithBytesNoCopy:encryptedBytes length:actualOutSize];
+        return [self base64EncodedStringFrom:data];
+    }
+    free(encryptedBytes);
+    return nil;
+}
+
+//
++ (NSString *)dencryptAES:(NSString *)string
+                   secret:(NSString *)secret
+{
+    const int kKeySize = kCCKeySizeAES128;
+    char keyPtr[kCCKeySizeAES128+1];
+    bzero(keyPtr, sizeof(keyPtr));
+    [secret getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+    NSData *contentData = [self dataWithBase64EncodedString:string];
+    NSUInteger dataLength = [contentData length];
+    size_t bufferSize = dataLength + kCCBlockSizeAES128;
+    void *buffer = malloc(bufferSize);
+    size_t numBytesDecrypted = 0;
+    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding,
+                                          keyPtr, kKeySize,
+                                          NULL,
+                                          [contentData bytes],
+                                          dataLength,
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesDecrypted);
+    if (cryptStatus == kCCSuccess) {
+        NSData *data = [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
+        return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    }
+    free(buffer);
+    return nil;
+}
+
+
+
 
 
 @end
+
+
+
+
+
+
+
+
+
+
 
 
 
