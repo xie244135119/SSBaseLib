@@ -34,22 +34,6 @@
 }
 
 
-#pragma mark - NSCoding
-//
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
-    [aCoder encodeObject:_baseOtherinfo forKey:@"baseOtherinfo"];
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    if (self = [super initWithCoder:aDecoder]) {
-        self.baseOtherinfo = [aDecoder decodeObjectForKey:@"baseOtherinfo"];
-    }
-    return self;
-}
-
-
 @end
 
 
