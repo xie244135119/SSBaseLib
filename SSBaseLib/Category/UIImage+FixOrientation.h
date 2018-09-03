@@ -10,11 +10,29 @@
 
 @interface UIImage (FixOrientation)
 
-/*修正相机拍摄出来的照片角度问题*/
-- (UIImage *)fixOrientation;
-//- (UIImage* )rotateImage;
 
-//重画压缩
+/**
+ 修正相机拍摄出来的照片角度问题
+
+ @return image
+ */
+- (UIImage *)fixOrientation;
+
+/**
+ 重画压缩
+ 原始方法 逐渐废弃
+ @return image
+ */
 - (UIImage *)zipWithDraw;
+
+/**
+ 最大压缩比例
+
+ @param maxLength 最大大小 为0 表示默认500kb
+ @return 一张处理过的图片
+ */
+- (UIImage *)zipWithMaxLength:(NSUInteger)maxLength;
+
+
 
 @end

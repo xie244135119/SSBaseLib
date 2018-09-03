@@ -14,6 +14,7 @@
 #import "SSImageTool.h"
 #import "SSFPSControl.h"
 #import "SSEncryptSignTool.h"
+#import "UIImage+FixOrientation.h"
 
 @interface ViewController ()<SSFPSControlDelegate>
 {
@@ -28,7 +29,8 @@
     [super viewDidLoad];
 //    [self test2];
 //    [self testFps];
-    [self test3];
+//    [self test3];
+    [self test4];
 }
 
 
@@ -103,6 +105,15 @@
     NSString *resault = [SSEncryptSignTool encryptAES:string secret:secret];
     NSString *value = [SSEncryptSignTool dencryptAES:resault secret:secret];
     NSLog(@" 加密结果：%@，解密结果：%@ ",resault, value);
+}
+
+
+- (void)test4
+{
+    UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    NSLog(@" 压缩前的图为%@ ",image);
+    UIImage *newImage = [image zipWithMaxLength:200*1024];
+    NSLog(@" 压缩后的图为%@ ",newImage);
 }
 
 
