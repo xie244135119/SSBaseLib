@@ -217,6 +217,37 @@
 }
 
 
+// 微信特定的图片压缩 最大大小，最大尺寸
+- (UIImage *)zipWithWechat
+{
+    // 先按照长宽比压缩
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    // 压缩重绘
+    UIImage *newImage = self;
+    if (self.size.width > screenSize.width*2) {
+        CGFloat heigth = screenSize.width*2*self.size.height/self.size.width;
+        CGRect rect=CGRectMake(0, 0, screenSize.width*2, heigth);
+        UIGraphicsBeginImageContext(rect.size);
+        [self drawInRect:rect];
+        newImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
+    
+    // 进行压缩
+    CGFloat maxFileSize = 200*1024;
+    CGFloat compression = 0.9f;
+    CGFloat maxCompression = 0.1f;
+    NSData *compressedData = UIImageJPEGRepresentation(newImage, compression);
+    while ([compressedData length] > maxFileSize && compression > maxCompression) {
+        compression -= 0.1;
+        compressedData = UIImageJPEGRepresentation(newImage, compression);
+    }
+    UIImage *compressedImage = [UIImage imageWithData:compressedData];
+    return compressedImage;
+}
+
+
+
 #pragma mark - private api
 //
 - (NSData *)_zipWithMaxLength:(NSUInteger)maxLength

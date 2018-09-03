@@ -26,6 +26,13 @@
 - (UIImage *)zipWithDraw;
 
 /**
+ 微信特定的压缩方式
+
+ @return image
+ */
+- (UIImage *)zipWithWechat;
+
+/**
  最大压缩比例
 
  @param maxLength 最大大小 为0 表示默认500kb
