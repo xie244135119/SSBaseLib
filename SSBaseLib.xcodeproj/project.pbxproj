@@ -22,6 +22,15 @@
 		CB40C0AC1FA885CC00D1A6F5 /* SSTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CB40C0AA1FA885CC00D1A6F5 /* SSTool.h */; };
 		CB40C0AD1FA885CC00D1A6F5 /* SSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB40C0AB1FA885CC00D1A6F5 /* SSTool.m */; };
 		CB40C0AE1FA885CC00D1A6F5 /* SSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB40C0AB1FA885CC00D1A6F5 /* SSTool.m */; };
+		CB42AEDE21E6FC6700ECE858 /* NSString+Price.h in Headers */ = {isa = PBXBuildFile; fileRef = CB42AEDC21E6FC6700ECE858 /* NSString+Price.h */; };
+		CB42AEDF21E6FC6700ECE858 /* NSString+Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEDD21E6FC6700ECE858 /* NSString+Price.m */; };
+		CB42AEE021E70C6200ECE858 /* NSString+Price.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEDD21E6FC6700ECE858 /* NSString+Price.m */; };
+		CB42AEE321E70E2E00ECE858 /* UIImage+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = CB42AEE121E70E2E00ECE858 /* UIImage+Base.h */; };
+		CB42AEE421E70E2E00ECE858 /* UIImage+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEE221E70E2E00ECE858 /* UIImage+Base.m */; };
+		CB42AEE521E70E2E00ECE858 /* UIImage+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEE221E70E2E00ECE858 /* UIImage+Base.m */; };
+		CB42AEE821E70EFF00ECE858 /* UIColor+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = CB42AEE621E70EFF00ECE858 /* UIColor+Base.h */; };
+		CB42AEE921E70EFF00ECE858 /* UIColor+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEE721E70EFF00ECE858 /* UIColor+Base.m */; };
+		CB42AEEA21E70EFF00ECE858 /* UIColor+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42AEE721E70EFF00ECE858 /* UIColor+Base.m */; };
 		CB5010951F273F0400C6E943 /* AMDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5010911F273F0400C6E943 /* AMDBaseModel.h */; };
 		CB5010961F273F0400C6E943 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5010921F273F0400C6E943 /* AMDBaseModel.m */; };
 		CB5010971F273F0400C6E943 /* AMDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5010921F273F0400C6E943 /* AMDBaseModel.m */; };
@@ -100,6 +109,12 @@
 		CB40C0A61FA8829600D1A6F5 /* UIView+AMD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AMD.m"; sourceTree = "<group>"; };
 		CB40C0AA1FA885CC00D1A6F5 /* SSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTool.h; sourceTree = "<group>"; };
 		CB40C0AB1FA885CC00D1A6F5 /* SSTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTool.m; sourceTree = "<group>"; };
+		CB42AEDC21E6FC6700ECE858 /* NSString+Price.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Price.h"; sourceTree = "<group>"; };
+		CB42AEDD21E6FC6700ECE858 /* NSString+Price.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Price.m"; sourceTree = "<group>"; };
+		CB42AEE121E70E2E00ECE858 /* UIImage+Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Base.h"; sourceTree = "<group>"; };
+		CB42AEE221E70E2E00ECE858 /* UIImage+Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Base.m"; sourceTree = "<group>"; };
+		CB42AEE621E70EFF00ECE858 /* UIColor+Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Base.h"; sourceTree = "<group>"; };
+		CB42AEE721E70EFF00ECE858 /* UIColor+Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Base.m"; sourceTree = "<group>"; };
 		CB5010911F273F0400C6E943 /* AMDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDBaseModel.h; sourceTree = "<group>"; };
 		CB5010921F273F0400C6E943 /* AMDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDBaseModel.m; sourceTree = "<group>"; };
 		CB5010931F273F0400C6E943 /* AMDBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDBaseViewModel.h; sourceTree = "<group>"; };
@@ -191,6 +206,12 @@
 				CB40C0A61FA8829600D1A6F5 /* UIView+AMD.m */,
 				CB50109C1F273F0700C6E943 /* NSObject+SSBindValue.h */,
 				CB50109D1F273F0700C6E943 /* NSObject+SSBindValue.m */,
+				CB42AEDC21E6FC6700ECE858 /* NSString+Price.h */,
+				CB42AEDD21E6FC6700ECE858 /* NSString+Price.m */,
+				CB42AEE121E70E2E00ECE858 /* UIImage+Base.h */,
+				CB42AEE221E70E2E00ECE858 /* UIImage+Base.m */,
+				CB42AEE621E70EFF00ECE858 /* UIColor+Base.h */,
+				CB42AEE721E70EFF00ECE858 /* UIColor+Base.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -351,6 +372,7 @@
 			files = (
 				CB614AEE1EE9679800471DE9 /* SSJSONModelLib.h in Headers */,
 				CB614AF11EE9679800471DE9 /* SSJSONValueTransformer.h in Headers */,
+				CB42AEDE21E6FC6700ECE858 /* NSString+Price.h in Headers */,
 				CB40C0AC1FA885CC00D1A6F5 /* SSTool.h in Headers */,
 				CB5010951F273F0400C6E943 /* AMDBaseModel.h in Headers */,
 				CB614AE81EE9679800471DE9 /* SSJSONModel.h in Headers */,
@@ -369,6 +391,8 @@
 				CB5010A41F273F0800C6E943 /* SSDateTool.h in Headers */,
 				CB53B2CF1F4D18230083A31B /* SSEncryptSignTool.h in Headers */,
 				CB614A741EE91B1000471DE9 /* SSBaseLib.h in Headers */,
+				CB42AEE321E70E2E00ECE858 /* UIImage+Base.h in Headers */,
+				CB42AEE821E70EFF00ECE858 /* UIColor+Base.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +445,7 @@
 		CB614A661EE91B1000471DE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SunSet;
 				TargetAttributes = {
 					CB614A6E1EE91B1000471DE9 = {
@@ -561,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB53B2CB1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
+				CB42AEDF21E6FC6700ECE858 /* NSString+Price.m in Sources */,
 				CB614AED1EE9679800471DE9 /* SSJSONModelError.m in Sources */,
 				726C1E2120B7D912008AD300 /* UIImage+Color.m in Sources */,
 				CB5010991F273F0400C6E943 /* AMDBaseViewModel.m in Sources */,
@@ -573,11 +598,13 @@
 				CB5010A21F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010961F273F0400C6E943 /* AMDBaseModel.m in Sources */,
 				CB53B2D01F4D18230083A31B /* SSEncryptSignTool.m in Sources */,
+				CB42AEE921E70EFF00ECE858 /* UIColor+Base.m in Sources */,
 				CB51255320D0CE3D00F878C4 /* UIImage+FixOrientation.m in Sources */,
 				CB614AE91EE9679800471DE9 /* SSJSONModel.m in Sources */,
 				CB614AEB1EE9679800471DE9 /* SSJSONModelClassProperty.m in Sources */,
 				CB40C0A81FA8829600D1A6F5 /* UIView+AMD.m in Sources */,
 				CB644C531F7CA0A4001BF127 /* SSImageTool.m in Sources */,
+				CB42AEE421E70E2E00ECE858 /* UIImage+Base.m in Sources */,
 				CB688DF11FE7687D00920098 /* SSFPSControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +616,7 @@
 				CB51255220D0CE3D00F878C4 /* UIImage+FixOrientation.m in Sources */,
 				CB53B2CC1F4D181A0083A31B /* SSErrorLogTool.m in Sources */,
 				CB644C541F7CA0A4001BF127 /* SSImageTool.m in Sources */,
+				CB42AEE021E70C6200ECE858 /* NSString+Price.m in Sources */,
 				CB5010A31F273F0700C6E943 /* NSObject+SSBindValue.m in Sources */,
 				CB5010A61F273F0800C6E943 /* SSDateTool.m in Sources */,
 				CB27838B1FD64DAD00FC3A3C /* NSString+CoderDecoder.m in Sources */,
@@ -599,8 +627,10 @@
 				CB614A911EE94DD400471DE9 /* AppDelegate.m in Sources */,
 				CB644C5A1F7CA6B5001BF127 /* SSJSONKeyMapper.m in Sources */,
 				CB688DF21FE7762100920098 /* SSFPSControl.m in Sources */,
+				CB42AEEA21E70EFF00ECE858 /* UIColor+Base.m in Sources */,
 				CB644C591F7CA6B1001BF127 /* SSJSONModelError.m in Sources */,
 				CB40C0AE1FA885CC00D1A6F5 /* SSTool.m in Sources */,
+				CB42AEE521E70E2E00ECE858 /* UIImage+Base.m in Sources */,
 				CB644C571F7CA6AD001BF127 /* SSJSONModel.m in Sources */,
 				CB614A8E1EE94DD400471DE9 /* main.m in Sources */,
 				CB40C0A91FA8829600D1A6F5 /* UIView+AMD.m in Sources */,
@@ -647,6 +677,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -654,6 +685,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -705,6 +737,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -712,6 +745,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

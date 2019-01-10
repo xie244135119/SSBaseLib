@@ -31,6 +31,9 @@ FOUNDATION_EXPORT const unsigned char SSBaseLibVersionString[];
 #import <SSBaseLib/UIImage+FixOrientation.h>
 #import <SSBaseLib/UIImage+Color.h>
 #import <SSBaseLib/NSString+CoderDecoder.h>
+#import <SSBaseLib/NSString+Price.h>
+#import <SSBaseLib/UIImage+Base.h>
+#import <SSBaseLib/UIColor+Base.h>
 #import <SSBaseLib/NSObject+SSBindValue.h>
 #import <SSBaseLib/UIView+AMD.h>
 

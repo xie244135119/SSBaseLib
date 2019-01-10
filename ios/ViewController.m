@@ -15,6 +15,7 @@
 #import "SSFPSControl.h"
 #import "SSEncryptSignTool.h"
 #import "UIImage+FixOrientation.h"
+#import "NSString+Price.h"
 
 @interface ViewController ()<SSFPSControlDelegate>
 {
@@ -30,7 +31,8 @@
 //    [self test2];
 //    [self testFps];
 //    [self test3];
-    [self test4];
+//    [self test4];
+    [self test5];
 }
 
 
@@ -114,6 +116,17 @@
     NSLog(@" 压缩前的图为%@ ",image);
     UIImage *newImage = [image zipWithMaxLength:200*1024];
     NSLog(@" 压缩后的图为%@ ",newImage);
+}
+
+- (void)test5{
+    NSString *a = @"12.23";
+    NSLog(@"%@", [a p_delUnnecessaryZero]);
+    NSString *a1 = @"12.00";
+    NSLog(@"%@", [a1 p_delUnnecessaryZero]);
+    NSString *a2 = @"12.30";
+    NSLog(@"%@", [a2 p_delUnnecessaryZero]);
+    NSString *a3 = @"1209";
+    NSLog(@"%@", [a3 p_delUnnecessaryZero]);
 }
 
 

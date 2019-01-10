@@ -26,4 +26,12 @@
 - (NSString *)urlDecode;
 
 
+/**
+ MD5加密
+
+ @return 加密后的字符串
+ */
+- (NSString *)md5;
+
+
 @end
